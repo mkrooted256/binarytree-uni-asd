@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 855d466f7f24d1386580b7921265f2f01f7a9da712b0b9aef6509dc65483b096
+-- hash: e439a90ec115e5fd00c2f7eee98edbc37709390517fab4eaeea0d36794b7a065
 
 name:           lab5-h
 version:        0.1.0.0
@@ -15,11 +15,7 @@ author:         Author name here
 maintainer:     Author email here
 copyright:      2019 Author name here
 license:        BSD3
-license-file:   LICENSE
 build-type:     Simple
-extra-source-files:
-    README.md
-    ChangeLog.md
 
 source-repository head
   type: git
