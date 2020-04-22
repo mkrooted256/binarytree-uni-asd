@@ -6,9 +6,6 @@ author:              "Author name here"
 maintainer:          "Author email here"
 copyright:           "2019 Author name here"
 
-extra-source-files:
-- README.md
-- ChangeLog.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -24,6 +21,9 @@ dependencies:
 
 library:
   source-dirs: src
+  exposed-modules:
+    - L5
+    - Math
 
 executables:
   lab5-h-exe:
@@ -35,14 +35,14 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - lab5-h
-
-tests:
-  lab5-h-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - lab5-h
+#
+#tests:
+#  lab5-h-test:
+#    main:                Spec.hs
+#    source-dirs:         test
+#    ghc-options:
+#    - -threaded
+#    - -rtsopts
+#    - -with-rtsopts=-N
+#    dependencies:
+#    - lab5-h

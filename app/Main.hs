@@ -2,6 +2,7 @@ module Main where
 
 import Text.Read
 import L5
+import Math
 
 elementInput :: L5.Tree Int -> IO (L5.Tree Int)
 elementInput tree = do
@@ -16,5 +17,10 @@ elementInput tree = do
 main :: IO ()
 main = do
   tree <- elementInput L5.EmptyTree
-  print tree
-
+  putStrLn "Tree:"
+  putStrLn $ L5.showTree tree
+  putStr "Enter element to find: "
+  a <- getLine
+  print $ L5.inTree tree $ read a 
+  
+  
